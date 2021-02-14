@@ -1,5 +1,5 @@
-const { firebaseConfig } = require("./firebase-auth");
-const { userConfig } = require("./user-auth");
+// const { firebaseConfig } = require("./firebase-auth");
+// const { userConfig } = require("./user-auth");
 
 const userEnv = {
   userEmail: process.env.FB_USER_EMAIL || userConfig.userEmail,
