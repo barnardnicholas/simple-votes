@@ -3,6 +3,7 @@ const server = express();
 const firebase = require("firebase");
 const { get } = require("https");
 const { firebaseEnv, userEnv } = require("./auth/auth");
+const cors = require("cors");
 
 // const { fbSignIn, getAllVotes, addVote } = require("./controllers/controllers");
 // const { userSignIn } = require("./models/models");
@@ -24,6 +25,7 @@ const database = firebase.database();
 //   });
 
 server.use(express.json());
+server.use(cors({ origin: "*" }));
 
 const userSignIn = (email, password) => {
   console.log(`Signing in as ${email}...`);
@@ -71,6 +73,7 @@ server.get("/votes", (req, res) => {
     })
     .then((votes) => {
       console.log(votes);
+      res.setHeader("Access-Control-Allow-Origin", "*");
       return res.send({ votes });
     })
     .catch((e) => {
@@ -85,7 +88,11 @@ server.post("/votes", (req, res) => {
     })
     .then((votes) => {
       console.log("Votes: ", votes);
+      res.setHeader("Access-Control-Allow-Origin", "*");
       res.send({ votes });
+    })
+    .catch((e) => {
+      console.log(e);
     });
 });
 

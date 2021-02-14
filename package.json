@@ -4,8 +4,9 @@
   "description": "",
   "main": "listen.js",
   "dependencies": {
-    "firebase": "^8.2.7",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
+    "firebase": "^8.2.7",
     "nodemon": "^2.0.7"
   },
   "devDependencies": {},
