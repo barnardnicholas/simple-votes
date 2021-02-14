@@ -13,7 +13,7 @@ const database = firebase.database();
 server.use(express.json());
 
 server.get("/", (req, res) => {
-  return res.send("Nick Barnard - Simple Votes v0.1");
+  return res.send("Nick Barnard - Simple Votes v0.1 (Heroku)");
 });
 
 const { PORT = 9090 } = process.env;
