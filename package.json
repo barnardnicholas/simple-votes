@@ -1,0 +1,28 @@
+{
+  "name": "simple-votes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "listen.js",
+  "dependencies": {
+    "firebase": "^8.2.7",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "nodemon-start": "nodemon listen.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barnardnicholas/simple-votes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/barnardnicholas/simple-votes/issues"
+  },
+  "homepage": "https://github.com/barnardnicholas/simple-votes#readme"
+}

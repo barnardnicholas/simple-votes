@@ -1,0 +1,3 @@
+node_modules
+/auth/firebase-auth.js
+/auth/user-auth.js
