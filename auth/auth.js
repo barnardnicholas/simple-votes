@@ -1,6 +1,6 @@
 // Comment out the following when deploying:
-const { firebaseConfig } = require("./firebase-auth");
-const { userConfig } = require("./user-auth");
+// const { firebaseConfig } = require("./firebase-auth");
+// const { userConfig } = require("./user-auth");
 
 exports.userEnv = {
   userEmail: process.env.FB_USER_EMAIL || userConfig.userEmail,
